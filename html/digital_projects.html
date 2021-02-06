@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/sampleJS.js"></script>
 </head>
 <body>
     <!--Navigation bar-->
@@ -20,23 +22,66 @@
         });
     </script>
     <!--end of Navigation bar-->
-
-    <div class="container-lg">
-        <table class="table table-hover">
-            <thread>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Project Name</th>
-                    <th scope="col">Project Link</th>
-                    <th scope="col">Project Description</th>
-                </tr>
-            </thread>
-            <tbody>
-                <th scope="row">1</th>
-                <td>Republican China Periodicals Corpus</td>
-                <td><a href="https://textual-optics-lab.uchicago.edu/shanghai-library-republican-journal-corpus">Click Here</a></td>
-                <td></td>
-            </tbody>
-        </table>
-    </div>  
+    <div class="container mt-3"> 
+        <h1>Digital Projects</h1>       
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="../images/republican-networks.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Republican China Corpus</h5>
+              <p class="card-text">The Republican China Periodicals Corpus 
+                represents a collaboration 
+                between the University of Chicago and the 
+                Chinese Periodical Database at 
+                the Shanghai Library. 
+                It contains 72 cultural and literary periodicals 
+                (full run) from 1918-1949.
+              </p>
+              <button type="button" onclick="location.href='https://textual-optics-lab.uchicago.edu/shanghai-library-republican-journal-corpus'">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img
+                src="../images/sun.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chinese Agricultural Scientists</h5>
+                <p class="card-text">
+                    The Chinese Agricultural Scientist Database (1900-1949) is
+                    a prosopographical database that aims to transcribe and analyze 
+                    personnel and employment records for Chinese agricultural 
+                    scientists from the first half of the twentieth century.
+                </p>
+                <button type="button" disabled>Learn More</a>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../images/slide.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Slides from Maoist China</h5>
+              <p class="card-text">
+                Features 24 slides on agricultural improvement published in 1955 under the title "前進中的中國農業生產."
+              </p>
+              <button type="button" onclick="location.href='agslides.html'">Learn More</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 </body>

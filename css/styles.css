@@ -1,7 +1,44 @@
 body {
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
+    min-height: 400px;
+    margin-bottom: 100px;
 }
 footer {
-    display: block;
+    padding: 50x 0 0;
+    position: relative;
+    z-index:2;
+    color: white;
+    bottom: 0;
+    height: 50px;
   }
+
+
+.row {
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 992px) {
+    .row {
+        text-align: justify;
+    }
+  }
+
+.dropcap {
+    font-family: cursive;
+    color: black;
+    float: left;
+    font-size: 5rem;
+    line-height: 1;
+    padding: 0.1em;
+}
+
+.row-dc ::first-letter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    line-height: 0.65;
+    padding-top: 0.1em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+    float: left;
+}
