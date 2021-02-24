@@ -235,9 +235,9 @@ function parseArray(array) {
 }
 
 function alpSort(array) {
-    return array.sort()
+    return array.concat().sort();
 }
 
   function lenSort(array){
-    return array.sort(function (a, b) {return b.length - a.length;});
+    return array.concat().sort(function (a, b) {return b.length - a.length;});
   }
